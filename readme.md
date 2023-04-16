@@ -1,4 +1,4 @@
-# CIFAR-10 Image Classification using LeNet
+# CIFAR-10 Image Classification using LeNet and Ray Tune
 This project aims to classify images from the CIFAR-10 dataset using the LeNet architecture. The LeNet architecture is a convolutional neural network (CNN) that was introduced in 1998 by Yann LeCun et al. for handwritten digit recognition. It consists of two sets of convolutional and average pooling layers, followed by a flattening layer, two fully connected layers, and a softmax classifier.
 
 ## Ray Tune
