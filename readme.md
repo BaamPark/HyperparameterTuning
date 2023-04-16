@@ -12,7 +12,7 @@ This project aims to classify images from the CIFAR-10 dataset using the LeNet a
 : The script defining the modified LeNet model architecture.
 
 ## Usage
-Training and Testing
+**Training and Testing**
 To train and test the LeNet model on the CIFAR-10 dataset, run the following command:
 
 ```console 
