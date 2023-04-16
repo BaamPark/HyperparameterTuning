@@ -16,8 +16,8 @@ def main():
     config = {
         #The lr (learning rate) should be uniformly sampled between 0.0001 and 0.1. Lastly, the batch size is a choice between 2, 4, 8, and 16.
         "lr": tune.loguniform(1e-4, 1e-2),
-        "batch_size": tune.choice([8]),
-        "prob": tune.quniform(0.2, 0.5, 0.05)
+        "batch_size": tune.choice([4, 8, 16, 32]),
+        "dropout_rate": tune.quniform(0.2, 0.5, 0.05)
     }
 
     scheduler = ASHAScheduler( #use the ASHAScheduler which will terminate bad performing trials early
@@ -34,7 +34,7 @@ def main():
             metric="accuracy", #Now Ray Tune search algorithm tries to minimize loss that is used to session.report
             mode="max", #mode: Must be one of [min, max]. Determines whether objective is minimizing or maximizing
             scheduler=scheduler,
-            num_samples=8,
+            num_samples=10,
         ),
         param_space=config,
         run_config=air.RunConfig(local_dir="./results", name="test_experiment")
@@ -81,7 +81,7 @@ def train_cifar(config):
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = LeNet(config["prob"])
+    model = LeNet(True, config["dropout_rate"])
     
     model.to(device)
 
