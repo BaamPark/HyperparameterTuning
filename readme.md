@@ -15,7 +15,9 @@ This project aims to classify images from the CIFAR-10 dataset using the LeNet a
 Training and Testing
 To train and test the LeNet model on the CIFAR-10 dataset, run the following command:
 
-```console python main.py```
+```console 
+python main.py
+```
 This will train the model for 20 epochs and test it on the test set. The training and testing results will be printed to the console.
 
 Hyperparameter Tuning
