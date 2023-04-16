@@ -32,6 +32,3 @@ To perform hyperparameter tuning using Ray Tune, run the following command:
 python tuning.py
 ```
 This will perform a hyperparameter search using the ASHA algorithm and report the best hyperparameters found.
-
-Conclusion
-In this project, we implemented the LeNet architecture for image classification on the CIFAR-10 dataset. I achieved an accuracy of 73% after hyperparameter tuning using Ray Tune. This project demonstrates the effectiveness of hyperparameter tuning in improving the performance of deep learning models.
