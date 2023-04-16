@@ -15,13 +15,13 @@ This project aims to classify images from the CIFAR-10 dataset using the LeNet a
 Training and Testing
 To train and test the LeNet model on the CIFAR-10 dataset, run the following command:
 
-```bash python main.py```
+```console python main.py```
 This will train the model for 20 epochs and test it on the test set. The training and testing results will be printed to the console.
 
 Hyperparameter Tuning
 To perform hyperparameter tuning using Ray Tune, run the following command:
 
-```bash python tuning.py```
+```console python tuning.py```
 This will perform a hyperparameter search using the ASHA algorithm and report the best hyperparameters found.
 
 Dependencies
