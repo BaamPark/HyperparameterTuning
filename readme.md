@@ -23,7 +23,9 @@ This will train the model for 20 epochs and test it on the test set. The trainin
 Hyperparameter Tuning
 To perform hyperparameter tuning using Ray Tune, run the following command:
 
-```console python tuning.py```
+```console 
+python tuning.py
+```
 This will perform a hyperparameter search using the ASHA algorithm and report the best hyperparameters found.
 
 Dependencies
