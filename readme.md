@@ -13,6 +13,7 @@ This project aims to classify images from the CIFAR-10 dataset using the LeNet a
 
 ## Usage
 **Training and Testing**
+
 To train and test the LeNet model on the CIFAR-10 dataset, run the following command:
 
 ```console 
@@ -20,7 +21,8 @@ python main.py
 ```
 This will train the model for 20 epochs and test it on the test set. The training and testing results will be printed to the console.
 
-Hyperparameter Tuning
+**Hyperparameter Tuning**
+
 To perform hyperparameter tuning using Ray Tune, run the following command:
 
 ```console 
@@ -28,14 +30,6 @@ python tuning.py
 ```
 This will perform a hyperparameter search using the ASHA algorithm and report the best hyperparameters found.
 
-Dependencies
-Python 3.6+
-PyTorch 1.9.0
-torchvision 0.10.0
-numpy 1.19.5
-matplotlib 3.4.2
-Ray 1.6.0
-Results
 The LeNet model achieved an accuracy of 70% on the test set after Best trial config: {'lr': 0.0018573094008814584, 'batch_size': 16, 'dropout_rate': 0.25}
 
 Hyperparameter tuning using Ray Tune improved the accuracy to 73% by selecting a learning rate of 0.0001, a batch size of 16, and a dropout rate of 0.25.
