@@ -2,16 +2,16 @@
 This project aims to classify images from the CIFAR-10 dataset using the LeNet architecture. The LeNet architecture is a convolutional neural network (CNN) that was introduced in 1998 by Yann LeCun et al. for handwritten digit recognition. It consists of two sets of convolutional and average pooling layers, followed by a flattening layer, two fully connected layers, and a softmax classifier.
 
 ## Files
-`main.py`
+-`main.py`
 : The main script for training and testing the LeNet model on the CIFAR-10 dataset.
 
-`tuning.py`
+`-tuning.py`
 : The script for hyperparameter tuning using [Ray Tune](https://docs.ray.io/en/latest/tune/index.html)
 
-`model.py`
+-`model.py`
 : The script defining the modified LeNet model architecture.
 
-##Usage
+## Usage
 Training and Testing
 To train and test the LeNet model on the CIFAR-10 dataset, run the following command:
 
