@@ -4,8 +4,10 @@ This project aims to classify images from the CIFAR-10 dataset using the LeNet a
 ## Files
 `main.py`
 : The main script for training and testing the LeNet model on the CIFAR-10 dataset.
+
 `tuning.py`
 : The script for hyperparameter tuning using [Ray Tune](https://docs.ray.io/en/latest/tune/index.html)
+
 `model.py`
 : The script defining the modified LeNet model architecture.
 
